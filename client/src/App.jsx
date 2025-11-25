@@ -1,18 +1,12 @@
-import './App.css'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import AddTodo from "./components/AddTodo";
+import TodoList from "./components/TodoList";
 
-function App() {
-  
+export default function App() {
   return (
-    <>
-    <Router>
-      <Routes>
-        <Route path='/' element={<h1>Home Page</h1>} />
-        <Route path='/about' element={<h1>About Page</h1>} />
-      </Routes>
-    </Router>
-    </>
-  )
+    <div>
+      <h1>TODO list</h1>
+      <AddTodo />
+      <TodoList />
+    </div>
+  );
 }
-
-export default App
